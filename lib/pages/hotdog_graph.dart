@@ -88,7 +88,7 @@ class _HotdogGraphState extends State<HotdogGraph> {
               leftTitles: AxisTitles(
                 sideTitles: SideTitles(
                   showTitles: true,
-                  reservedSize: 45, // ✅ FIXES SQUISHING
+                  reservedSize: 45,
                   interval: 1,
                   getTitlesWidget: (value, meta) {
                     return Padding(
@@ -107,7 +107,7 @@ class _HotdogGraphState extends State<HotdogGraph> {
 
             borderData: FlBorderData(show: false),
 
-            /// 📊 BARS
+            /// bars
             barGroups: List.generate(data.length, (index) {
               final hotdogs = data[index]["hotdogs"];
 
@@ -120,8 +120,8 @@ class _HotdogGraphState extends State<HotdogGraph> {
                     borderRadius: BorderRadius.circular(6),
                     gradient: const LinearGradient(
                       colors: [
-                        Color(0xFFA62B2B), // ketchup
-                        Color(0xFFD98D00), // mustard
+                        Color(0xFFA62B2B), // ketchup :)
+                        Color(0xFFD98D00), // mustard :)
                       ],
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,
